@@ -1,0 +1,12 @@
+p {
+	box-sizing: border-box;;
+}
+img {
+	display: block;
+	position: absolute;	
+}
+.image {
+	position: absolute;
+	top : 10%;
+	left: 10%;
+}

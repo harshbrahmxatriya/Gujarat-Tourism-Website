@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gujarat Tourism</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		body {
+			background:/*linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255,0.4) 65%),*/ url("../media/images/rann.jpg");
+			background-size: cover;
+			
+			/*filter: opacity(0%);
+			filter: grayscale(0%);
+			filter: brightness(60%);*/
+		}
+
+		/*body:after {
+		  content: "";
+		  position: fixed;
+		  top: 0; bottom: 0; left: 0; right: 0; 
+		  background: hsla(180,0%,50%,0.25);
+		  pointer-events: none;
+		}*/
+		
+		.title {
+			display: flex;
+			align-items: center;
+			
+		}
+		.title p{
+			padding-left: 220px;
+			
+		}
+		.title span{
+			padding-left: 70px;
+			color: rgb(231, 189, 137);
+		}
+
+		div.list{
+			padding-left: 170px;
+			padding-top: 100px;
+		}
+		button {
+			background-color: rgba(250,250,250,0.3);
+			border: none;
+			color: black;
+			padding: 25px 52px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 32px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 16px;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+		}
+		button:hover {
+			background-color: white;	
+			color: rgb(193,154,107);
+			animation-name: rounded;
+		}
+		@keyframes rounded {
+			0%{border-radius: 18px;}
+			15%{border-radius: 50px;}
+			100%{border-radius: 48px}
+		}
+
+		#Ahmedabad,#Vadodara,#PrabhasPatan,
+		#Modhera, #Patan, #Dwarka,
+		#Diu, #Kutch, #Panchmahal
+		{
+			display: none;
+		}
+		
+		a:link {
+			
+			padding-top: 20px;
+			padding-bottom: 20px;
+			margin-left: 400px;
+			font-size: 32px;
+		  color: rgba(24,24,24,0.8);
+		  text-decoration: none;
+		  background-color: rgba(250,250,250,0.3);
+			border: none;
+			color: black;
+			padding: 18px 38px;
+			text-align: center;
+			display: flex;
+			font-size: 32px;
+			margin: 20px 20px;
+			cursor: pointer;
+			border-radius: 16px;
+			margin-left: 250px;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+		}
+		
+		a:visited {
+			color: black;
+		}
+		a:hover {
+		  
+		  background-color: white;	
+			color: rgb(193,154,107);
+			animation-name: rounded;
+		}
+
+	</style>
+</head>
+<body>
+
+	
+	<div id="main">
+		<div class="title">
+		<img src="../media/images/gt logo.jpg" height=100 width=150>
+		<p> <font color="orange" size="10"> <b>The Heritage of Gujarat</b> </font>
+			<br>
+			<span><font size=4> <b> "KUCHH DIN TO BITAO GUJARAT MEIN" </b> </font></span>
+		</p>
+		</div>
+
+		<div class="list">
+
+		<button id="btn openNavAmd" onclick="a_open()">Ahmedabad</button><br>
+		<div id="Ahmedabad"> <a href="description/descriptionofa1.html"> Sidi Saiyad's grill </a>
+		<a href="description/descriptionofa2.html"> Jama Masjid </a>
+		<a href="description/descriptionofa3.html"> Sidi Bashir Mosque </a> 
+		</div>
+
+
+		<button id="btn openNavVda" onclick="v_open()">Vadodara</button><br>
+		<div id="Vadodara">
+			<a href="description/descriptionofv1.html">  Laxmi Vilas Palace </a>
+			<a href="description/descriptionofv2.html">  Galteshwar Temple  </a>
+		</div>
+
+		<button id="btn openNavMda" onclick="m_open()">Modhera</button><br>
+		<div id="Modhera">
+			<a href="description/descriptionofm1.html">Modhera Temple</a>
+		</div>
+
+		<button id="btn openNavPP" onclick="pp_open()"> Prabhas Patan </button><br>
+		<div id="PrabhasPatan">
+			<a href="description/descriptionofpp1.html"> Somnath Temple  </a>
+		</div>
+
+		<button id="btn openNavPtn" onclick="p_open()"> Patan </button> <br>
+		<div id="Patan">
+			<a href="description/descriptionofp1.html"> Rani ki vav  </a>
+			<a href="description/descriptionofp2.html"> Patola Sarees </a>
+		</div>
+
+		<button id="btn openNavDwk" onclick="d_open()">Dwarka</button><br>
+		<div id="Dwarka">
+			<a href="description/descriptionofd1.html"> Dwarkadhisha Temple </a>
+			<a href="description/descriptionofd2.html"> Rukmini Devi Temple </a>
+			<a href="description/descriptionofd3.html"> Gomti Ghat </a>
+		</div>
+
+		<button id="btn openNavDiu" onclick="diu_open()">Diu</button><br>
+		<div id="Diu">
+			<a href="description/descriptionofdiu.html"> Diu Fort </a>
+		</div>
+
+		<button id="btn openNavKch" onclick="k_open()">Kutch</button><br>
+		<div id="Kutch"> <a href="description/descriptionofk1.html"> White Rann </a>
+		</div>
+
+		<button id="btn openNavPml" onclick="pn_open()">Panchmahal</button><br>
+		<div id="Panchmahal"> <a href="description/descriptionofpn.html"> Champaner-Pavagadh Archeological Site</a>
+		</div>
+
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		function a_open() {
+			document.getElementById("Ahmedabad").style.display = "block";
+			document.getElementById("Vadodara").style.display = "none";
+			document.getElementById("Modhera").style.display = "none";
+			document.getElementById("PrabhasPatan").style.display = "none";
+			document.getElementById("Patan").style.display = "none";
+			document.getElementById("Dwarka").style.display = "none";
+			document.getElementById("Diu").style.display = "none";
+			document.getElementById("Kutch").style.display = "none";
+			document.getElementById("Panchmahal").style.display = "none";
+			
+		}
+		function v_open() {
+			document.getElementById("Ahmedabad").style.display = "none";
+			document.getElementById("Vadodara").style.display = "block";
+			document.getElementById("Modhera").style.display = "none";
+			document.getElementById("PrabhasPatan").style.display = "none";
+			document.getElementById("Patan").style.display = "none";
+			document.getElementById("Dwarka").style.display = "none";
+			document.getElementById("Diu").style.display = "none";
+			document.getElementById("Kutch").style.display = "none";
+			document.getElementById("Panchmahal").style.display = "none";
+			
+		}
+		function m_open() {
+			document.getElementById("Ahmedabad").style.display = "none";
+			document.getElementById("Vadodara").style.display = "none";
+			document.getElementById("Modhera").style.display = "block";
+			document.getElementById("PrabhasPatan").style.display = "none";
+			document.getElementById("Patan").style.display = "none";
+			document.getElementById("Dwarka").style.display = "none";
+			document.getElementById("Diu").style.display = "none";
+			document.getElementById("Kutch").style.display = "none";
+			document.getElementById("Panchmahal").style.display = "none";
+		}
+		function pp_open() {
+			document.getElementById("Ahmedabad").style.display = "none";
+			document.getElementById("Vadodara").style.display = "none";
+			document.getElementById("Modhera").style.display = "none";
+			document.getElementById("PrabhasPatan").style.display = "block";
+			document.getElementById("Patan").style.display = "none";
+			document.getElementById("Dwarka").style.display = "none";
+			document.getElementById("Diu").style.display = "none";
+			document.getElementById("Kutch").style.display = "none";
+			document.getElementById("Panchmahal").style.display = "none";
+		}
+		function p_open() {
+			document.getElementById("Ahmedabad").style.display = "none";
+			document.getElementById("Vadodara").style.display = "none";
+			document.getElementById("Modhera").style.display = "none";
+			document.getElementById("PrabhasPatan").style.display = "none";
+			document.getElementById("Patan").style.display = "block";
+			document.getElementById("Dwarka").style.display = "none";
+			document.getElementById("Diu").style.display = "none";
+			document.getElementById("Kutch").style.display = "none";
+			document.getElementById("Panchmahal").style.display = "none";
+		}
+		function d_open() {
+			document.getElementById("Ahmedabad").style.display = "none";
+			document.getElementById("Vadodara").style.display = "none";
+			document.getElementById("Modhera").style.display = "none";
+			document.getElementById("PrabhasPatan").style.display = "none";
+			document.getElementById("Patan").style.display = "none";
+			document.getElementById("Dwarka").style.display = "block";
+			document.getElementById("Diu").style.display = "none";
+			document.getElementById("Kutch").style.display = "none";
+			document.getElementById("Panchmahal").style.display = "none";
+		}
+		function diu_open() {
+			document.getElementById("Ahmedabad").style.display = "none";
+			document.getElementById("Vadodara").style.display = "none";
+			document.getElementById("Modhera").style.display = "none";
+			document.getElementById("PrabhasPatan").style.display = "none";
+			document.getElementById("Patan").style.display = "none";
+			document.getElementById("Dwarka").style.display = "none";
+			document.getElementById("Diu").style.display = "block";
+			document.getElementById("Kutch").style.display = "none";
+			document.getElementById("Panchmahal").style.display = "none";
+		}
+		function k_open() {
+			document.getElementById("Ahmedabad").style.display = "none";
+			document.getElementById("Vadodara").style.display = "none";
+			document.getElementById("Modhera").style.display = "none";
+			document.getElementById("PrabhasPatan").style.display = "none";
+			document.getElementById("Patan").style.display = "none";
+			document.getElementById("Dwarka").style.display = "none";
+			document.getElementById("Diu").style.display = "none";
+			document.getElementById("Kutch").style.display = "block";
+			document.getElementById("Panchmahal").style.display = "none";
+		}
+		function pn_open() {
+			document.getElementById("Ahmedabad").style.display = "none";
+			document.getElementById("Vadodara").style.display = "none";
+			document.getElementById("Modhera").style.display = "none";
+			document.getElementById("PrabhasPatan").style.display = "none";
+			document.getElementById("Patan").style.display = "none";
+			document.getElementById("Dwarka").style.display = "none";
+			document.getElementById("Diu").style.display = "none";
+			document.getElementById("Kutch").style.display = "none";
+			document.getElementById("Panchmahal").style.display = "block";
+		}
+	</script>
+</body>
+</html>
